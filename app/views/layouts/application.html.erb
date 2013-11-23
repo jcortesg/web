@@ -5,8 +5,30 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+      <style>
+        aside > header .logo {
+            margin-top: 10px;
+            max-height: 30px; }
+
+        aside footer img {
+          height: 16px;
+          position: relative;
+          top: 5px;
+          left: 2px; }
+
+        .thumb {
+            height: 96px;
+            margin-bottom: 2.5em;
+            text-align: center;
+            line-height: 96px;
+        }
+        .column_4.thumb {
+            height: 220px;
+            line-height: 220px;
+        }
+    </style>
 </head>
-<body>
+<body data-tuktuk="boxes">
 
 <%= yield %>
 

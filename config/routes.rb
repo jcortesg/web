@@ -1,4 +1,7 @@
 Banko::Application.routes.draw do
+  resources :finances
+
+
   authenticated :user do
     root :to => 'home#index'
   end
